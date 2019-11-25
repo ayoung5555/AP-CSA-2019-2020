@@ -12,16 +12,17 @@ public class TestCoin {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Enter a key: ");
 		int userKey = input.nextInt();
-		input.close();
+		
 		Coin dime = new Coin();
 		dime.setKey(userKey);
 		dime.flip();
 		System.out.println("Dime: " + dime.toString());
+		System.out.println("Enter your key to unlock.");
 		int checkKey = input.nextInt();
 		dime.unlock(checkKey);
 		dime.flip();
 		System.out.println("Dime: " + dime.toString());
-	
+		input.close();
 
 	}
 
