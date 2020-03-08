@@ -19,6 +19,6 @@ public class EquilateralTriangle extends Triangle{
 	}
 
 	public double getHeight() {
-		return Math.sqrt(3) * 0.5 * side; //TODO CHECK
+		return Math.sqrt(3) * 0.5 * side;
 	}
 }
